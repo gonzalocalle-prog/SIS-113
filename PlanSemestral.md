@@ -9,7 +9,7 @@
 | **Gestión** | 2-2026 |
 | **Duración** | 20 semanas |
 | **Horas/semana** | 6 horas (3 sesiones de 2 h) |
-| **Lenguaje** | C# (.NET) + Bash |
+| **Lenguaje** | Java (JDK) + Bash |
 | **Docente** | Gonzalo Ivan Calle Clavel |
 | **Repositorio del curso** | [SIS-113](https://github.com/gonzalocalle-prog/SIS-113) |
 
@@ -79,10 +79,10 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 - Primer script real, escrito a mano
 
 **Sesión 3 — Migración guiada a Codespaces:**
-- Se muestra **en vivo** que `dotnet` no instala en WebVM por ser Debian de 32 bits
+- Se muestra **en vivo** que el JDK moderno no es viable en WebVM por ser Debian de 32 bits
 - Cada estudiante abre su primer Codespace desde la plantilla del curso (*Use this template*)
 - Se repiten los mismos comandos ya dominados, ahora sobre Ubuntu
-- Cierre: `dotnet --version` y un "Hello World" en C#
+- Cierre: `java --version` y un "Hello World" en Java
 
 **Entregable:** Script `.sh` funcional + Codespace operativo con el Hello World commiteado
 
@@ -112,7 +112,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 **Sesión 1:**
 - El problema que resuelve la POO: por qué 300 líneas de `Main` con variables sueltas no escalan
 - Clase vs. objeto, atributos, métodos, constructores, `new`
-- Sintaxis de C# para quien viene de C/C++/Java/Python
+- Sintaxis de Java para quien viene de C/C++/C#/Python
 
 **Sesión 2:**
 - Práctica guiada: **Ejercicio 1 — Sistema Bancario** (versión secuencial → versión con clases)
@@ -127,8 +127,8 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 #### Semana 6 — Colecciones y composición
 
 **Sesión 1:**
-- `List<T>`, recorrido y búsqueda. Un objeto que contiene otros objetos
-- `ToString()`, sobrecarga de métodos, constructores múltiples
+- `ArrayList` y la interfaz `List`, recorrido y búsqueda. Un objeto que contiene otros objetos
+- `toString()`, sobrecarga de métodos, constructores múltiples
 
 **Sesión 2:**
 - Práctica guiada: **Ejercicio 2 — Gestión de Biblioteca**
@@ -143,7 +143,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 #### Semana 7 — Encapsulamiento
 
 **Sesión 1:**
-- `private` vs `public` vs `protected`. Propiedades de C# (`get`/`set`)
+- `private` vs `public` vs `protected`. Getters y setters en Java
 - **Validación en el setter**: el estado inválido no debe poder existir
 - Por qué un campo público es una promesa que no puedes retirar
 
@@ -186,7 +186,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 #### Semana 9 — Herencia
 
 **Sesión 1:**
-- Clase base y clase derivada, `:`, `base()`, `protected`
+- Clase base y clase derivada, `extends`, `super()`, `protected`
 - Cuándo **no** usar herencia (la prueba del "es un" vs. "tiene un")
 
 **Sesión 2:**
@@ -203,8 +203,8 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 #### Semana 10 — Sobrescritura y clases abstractas
 
 **Sesión 1:**
-- `virtual` / `override` / `sealed`. Diferencia entre sobrecarga y sobrescritura
-- Clases abstractas y métodos abstractos
+- `@Override` y `final`. Diferencia entre sobrecarga y sobrescritura
+- Clases abstractas y métodos abstractos (`abstract`)
 
 **Sesión 2:**
 - Práctica guiada: **Agenda de Contactos** con jerarquía de contactos
@@ -220,7 +220,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 #### Semana 11 — Interfaces
 
 **Sesión 1:**
-- Interfaces: el contrato sin implementación. `IComparable`, `IEnumerable`
+- Interfaces: el contrato sin implementación. `Comparable`, `Iterable`
 - Interfaz vs. clase abstracta: cuándo cada una
 
 **Sesión 2:**
@@ -256,7 +256,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 
 **Sesión 1:**
 - Polimorfismo en acción: una colección del tipo base que ejecuta comportamientos distintos
-- *Upcasting* y *downcasting*, `is`, `as`, patrones de coincidencia
+- *Upcasting* y *downcasting*, `instanceof` y su patrón de coincidencia (*pattern matching*)
 
 **Sesión 2:**
 - Práctica guiada: aplicar polimorfismo real sobre Cine, Agenda y Estacionamiento
@@ -313,11 +313,11 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 
 ---
 
-#### Semana 16 — Task, async/await e hilos
+#### Semana 16 — Hilos, ExecutorService y CompletableFuture
 
 **Sesión 1:**
-- `Thread`, `Task`, `async` / `await`. Qué significa realmente "esperar sin bloquear"
-- Cuándo `async` no sirve de nada
+- `Thread`, `Runnable`, `ExecutorService`, `CompletableFuture`. Qué significa realmente "esperar sin bloquear"
+- Cuándo lanzar un hilo no sirve de nada
 
 **Sesión 2:**
 - Práctica guiada: procesar varios archivos en paralelo, operación larga sin congelar el menú
@@ -333,8 +333,8 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 #### Semana 17 — Sincronización y cierre del proyecto · Recuperatorios
 
 **Sesión 1:**
-- `lock`, `Mutex`, `Semaphore`. Deadlocks: cómo se producen y cómo se evitan
-- Colecciones seguras para concurrencia
+- `synchronized`, `ReentrantLock`, `Semaphore`. Deadlocks: cómo se producen y cómo se evitan
+- Colecciones seguras para concurrencia (`java.util.concurrent`)
 
 **Sesión 2:**
 - Laboratorio: corregir las condiciones de carrera detectadas en la Semana 15
@@ -408,7 +408,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 |-----------|-------------|
 | **Terminal Linux (sem. 1-3)** | [webvm.io](https://webvm.io) — Debian en el navegador |
 | **Entorno de desarrollo (sem. 3-20)** | GitHub Codespaces + `.devcontainer` del curso |
-| **Lenguaje / SDK** | C# sobre .NET (imagen `mcr.microsoft.com/devcontainers/dotnet`) |
+| **Lenguaje / SDK** | Java sobre el JDK (imagen `mcr.microsoft.com/devcontainers/java`) |
 | **Editor** | VS Code (en Codespaces) |
 | **Control de versiones** | Git + GitHub |
 | **Cuota de estudiante** | GitHub Student Developer Pack (180 core-hours/mes) |
@@ -420,10 +420,10 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 ## Recursos
 
 ### Base
-- Deitel, H., & Deitel, P. (2017). *C# How to Program*. Pearson.
-- Rob Miles. (2016). *C# Programming Yellow Book*. University of Hull.
+- Deitel, H., & Deitel, P. (2018). *Java How to Program, Early Objects*. Pearson.
+- Horstmann, C. (2022). *Core Java, Volume I: Fundamentals*. Oracle Press / Pearson.
 - Linux Professional Institute. (2024). *Linux Essentials*.
-- Microsoft. [*Object-oriented programming (C#)*](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/tutorials/oop) — Microsoft Learn
+- Oracle. [*The Java Tutorials — Object-Oriented Programming Concepts*](https://docs.oracle.com/javase/tutorial/java/concepts/)
 
 ### Sobre IA en el aula
 - ACM/IEEE. (2023). [*CS2023 — Generative AI and the Curriculum*](https://csed.acm.org)

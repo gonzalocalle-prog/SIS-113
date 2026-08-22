@@ -50,7 +50,7 @@ Antes de irse, cada estudiante muestra en su VM:
 
 2. En `comandos/`, crear un archivo `COMANDOS.md` con la lista de comandos vistos en clase (`pwd`, `ls`, `cd`, `mkdir`, `touch`, `cat`, `tree`, `man`, `history`): qué hace cada uno y **un ejemplo propio**, no el de clase
 3. Guardar la evidencia de su práctica: `history > evidencias/sesion-casa.txt`
-4. Convertirlo en repositorio Git: `git init`, commits con mensajes descriptivos (**mínimo 3 commits** — uno por parte de la tarea, no todo junto al final) y subirlo a su cuenta de GitHub
+4. Convertirlo en repositorio Git: `git init`, commits con mensajes descriptivos y subirlo a su cuenta de GitHub
 
 ### Parte 2 — Investigación (prepara la siguiente clase)
 
@@ -63,6 +63,6 @@ En `investigacion/rutas-y-directorios.md`, responder con sus palabras:
 ### Entrega
 
 - Link al repositorio en GitHub, antes de la siguiente clase
-- El historial de commits cuenta la historia: si todo aparece en un solo commit final, la tarea está incompleta
+- El historial de commits cuenta la historia
 
 > **Regla de IA:** se puede usar IA solo para *entender* un concepto de la Parte 2 (semáforo verde: tutor, no autor). Los ejemplos y respuestas se escriben con sus palabras — en clase cualquier estudiante puede ser invitado a explicar su respuesta en vivo.
