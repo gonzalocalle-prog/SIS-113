@@ -42,12 +42,15 @@ Al terminar la clase, cada estudiante:
 - Anatomía de una línea de `ls -la`: tipo, permisos `rwx` por usuario/grupo/otros, dueño, tamaño, fecha
 - `chmod` en notación simbólica (`u+x`, `go-w`) y numérica (`755`, `644`)
 - `chown` se presenta como concepto (cambiar de dueño); se usará poco en la VM
+   - https://www.redhat.com/en/blog/linux-file-permissions-explained 
 
 ### Parte 4 — Redirección y tuberías
 
 - `>` (sobrescribe), `>>` (agrega), `<` (entrada desde archivo)
 - `|`: la salida de un comando es la entrada del siguiente
 - Combinaciones con `wc`, `head`, `tail`; primer contacto con `grep` para filtrar líneas
+  - https://ryanstutorials.net/linuxtutorial/piping.php
+  - https://linux-commands.labex.io/
 
 ### Parte 5 — Laboratorio: "Respaldo automático de proyectos"
 
