@@ -38,7 +38,8 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 
 **Sesión 1:**
 - Qué es un sistema operativo, qué es una terminal, por qué un programador vive en ella
-- Onboarding a webvm.io — todos con una VM Linux corriendo al final de la sesión
+- Demo breve de webvm.io (una VM Linux corriendo en el navegador) — **solo demostrativo**, no es el entorno del curso
+- Activación de **WSL (Ubuntu)** en Windows; en macOS, la terminal nativa — todos con una terminal Unix corriendo al final de la sesión
 - `pwd`, `ls`, `cd`, `mkdir`, `touch`, `cat`, `tree`, `man` / `--help`, `history`
 
 **Sesión 2:**
@@ -69,7 +70,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 
 ---
 
-#### Semana 3 — Procesamiento de texto, scripting y migración
+#### Semana 3 — Procesamiento de texto, scripting y primer contacto con Java
 
 **Sesión 1:**
 - `grep`, `cut`, `sort`, `uniq` sobre un archivo de log real *(esto prepara directamente la evaluación de la Semana 8)*
@@ -78,17 +79,16 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 - Variables, `if`, `for`, funciones en Bash. Shebang (`#!/bin/bash`) y permisos de ejecución
 - Primer script real, escrito a mano
 
-**Sesión 3 — Migración guiada a Codespaces:**
-- Se muestra **en vivo** que el JDK moderno no es viable en WebVM por ser Debian de 32 bits
-- Cada estudiante abre su primer Codespace desde la plantilla del curso (*Use this template*)
-- Se repiten los mismos comandos ya dominados, ahora sobre Ubuntu
-- Cierre: `java --version` y un "Hello World" en Java
+**Sesión 3 — Instalación del JDK:**
+- Cada estudiante instala el JDK en su entorno: `sudo apt install openjdk-21-jdk` en WSL, Homebrew o SDKMAN en macOS
+- Alternativa en la nube para quien tenga problemas con su equipo: Codespace desde la plantilla del curso (*Use this template*)
+- Cierre: `java --version` y un "Hello World" en Java, compilado y ejecutado desde la terminal
 
-**Entregable:** Script `.sh` funcional + Codespace operativo con el Hello World commiteado
+**Entregable:** Script `.sh` funcional + Hello World en Java commiteado
 
 ---
 
-#### Semana 4 — Consolidación en Codespaces
+#### Semana 4 — Consolidación del entorno
 
 **Sesión 1:**
 - Análisis de uso de disco: `du`, `df`, `find`. Filtrado y generación de reportes
@@ -166,7 +166,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 **Sesión 2:**
 - Resolución de dudas, banco de ejercicios de práctica
 
-**Sesión 3 — EVALUACIÓN (presencial, en Codespace):**
+**Sesión 3 — EVALUACIÓN (presencial, en su propio entorno WSL/macOS):**
 1. **Parte Linux:** análisis de un archivo de logs con comandos de terminal
 2. **Parte POO:** sistema de gestión hospitalaria con encapsulamiento correcto
 
@@ -406,10 +406,11 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 
 | Propósito | Herramienta |
 |-----------|-------------|
-| **Terminal Linux (sem. 1-3)** | [webvm.io](https://webvm.io) — Debian en el navegador |
-| **Entorno de desarrollo (sem. 3-20)** | GitHub Codespaces + `.devcontainer` del curso |
+| **Terminal Linux** | **WSL 2 (Ubuntu)** en Windows · terminal nativa en macOS |
+| **Demo (solo clase 1)** | [webvm.io](https://webvm.io) — VM Linux en el navegador, únicamente demostrativo |
+| **Entorno de desarrollo** | VS Code + WSL (GitHub Codespaces con `.devcontainer` como alternativa en la nube) |
 | **Lenguaje / SDK** | Java sobre el JDK (imagen `mcr.microsoft.com/devcontainers/java`) |
-| **Editor** | VS Code (en Codespaces) |
+| **Editor** | VS Code (con la extensión *WSL* en Windows) |
 | **Control de versiones** | Git + GitHub |
 | **Cuota de estudiante** | GitHub Student Developer Pack (180 core-hours/mes) |
 | **Asistentes de IA** | GitHub Copilot (apagado por defecto), agentes CLI según semáforo |
@@ -432,7 +433,7 @@ Este curso convierte a alguien que *sabe escribir un programa* en alguien que *s
 - Carnegie Mellon University. [*15-113: Effective Coding with AI*](https://www.cs.cmu.edu/~113)
 
 ### Entornos
-- [WebVM](https://github.com/leaningtech/webvm) — Leaning Technologies
+- [Microsoft — Install WSL](https://learn.microsoft.com/windows/wsl/install)
 - [GitHub Codespaces documentation](https://docs.github.com/en/codespaces)
 
 ---

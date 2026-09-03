@@ -30,7 +30,7 @@ Al terminar la clase, cada estudiante:
 ### Parte 1 — Repaso de la tarea (rutas y directorios)
 
 - 2 o 3 estudiantes explican en vivo una respuesta de su `investigacion/rutas-y-directorios.md`
-- Dudas comunes de `.`, `..` y rutas relativas se resuelven en pizarra y en la VM
+- Dudas comunes de `.`, `..` y rutas relativas se resuelven en pizarra y en la terminal
 
 ### Parte 2 — Manipular archivos: `cp`, `mv`, `rm`
 
@@ -41,7 +41,7 @@ Al terminar la clase, cada estudiante:
 
 - Anatomía de una línea de `ls -la`: tipo, permisos `rwx` por usuario/grupo/otros, dueño, tamaño, fecha
 - `chmod` en notación simbólica (`u+x`, `go-w`) y numérica (`755`, `644`)
-- `chown` se presenta como concepto (cambiar de dueño); se usará poco en la VM
+- `chown` se presenta como concepto (cambiar de dueño); se usará poco en WSL
    - https://www.redhat.com/en/blog/linux-file-permissions-explained 
 
 ### Parte 4 — Redirección y tuberías
@@ -69,7 +69,7 @@ bash verificar.sh    # muestra el avance misión por misión
 
 ## Verificación de salida
 
-Antes de irse, cada estudiante muestra en su VM:
+Antes de irse, cada estudiante muestra en su terminal (WSL o macOS):
 
 - [ ] Un `ls -la` interpretado en voz alta: qué significa cada campo de una línea elegida por el docente
 - [ ] Un archivo cuyo permiso cambió con `chmod` (antes y después visibles en `history`)
@@ -95,7 +95,7 @@ En `investigacion/procesar-texto.md`, responder con sus palabras:
 
 1. ¿Qué hacen `grep`, `cut`, `sort` y `uniq`? Probar cada uno sobre un archivo de texto propio y anotar el comando y el resultado
 2. ¿Por qué `uniq` suele usarse después de `sort` y no solo? Demostrarlo con un ejemplo
-3. ¿Qué es un archivo de log? Buscar uno en la VM (pista: `/var/log`) y extraer 3 líneas que contengan una palabra elegida, usando una tubería
+3. ¿Qué es un archivo de log? Buscar uno en su WSL (pista: `/var/log`) y extraer 3 líneas que contengan una palabra elegida, usando una tubería
 
 ### Entrega
 

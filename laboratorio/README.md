@@ -10,7 +10,7 @@ Laboratorio interactivo de terminal: un proyecto de datos de sensores necesita l
 
 ## Cómo empezar
 
-En tu terminal (WebVM, Codespace o Git Bash):
+En tu terminal (WSL en Windows, terminal de macOS, o un Codespace):
 
 ```bash
 git clone https://github.com/gonzalocalle-prog/SIS-113.git
