@@ -10,8 +10,9 @@ Al terminar la clase, cada estudiante:
 
 1. Conoce **Sentinel**, el proyecto del curso: qué vamos a construir, en qué tres capas, y cuál es **la única regla** (el contrato JSON)
 2. Distingue con precisión **terminal**, **shell**, **CLI** y **Bash** — y puede explicar la diferencia con sus palabras
-3. Sabe qué es el **shebang** (`#!/bin/bash`), para qué sirve y qué pasa si falta
+3. Sabe qué es el **shebang** (`#!/bin/bash`), para qué sirve y qué pasa si falta - https://bash.cyberciti.biz/guide/Shebang
 4. Escribe Bash real: variables, argumentos, `if`, `while`/`for` y funciones
+
 5. Ha leído datos del kernel en `/proc` con los comandos de las clases 2 y 3 (`grep`, `cut`, tuberías)
 6. Tiene el **colector de Sentinel corriendo**: una línea JSON por segundo saliendo de su terminal
 
@@ -104,6 +105,8 @@ done
 ```
 
 Errores clásicos mostrados a propósito: `umbral = 80` (espacios), olvidar `$`, olvidar comillas en variables con espacios.
+
+**Práctica individual:** hoja de ejercicios en [Clase04-Ejercicios.md](Clase04-Ejercicios.md) — núcleo de 5 ejercicios en clase, 2 integradores para quien avanza rápido.
 
 ### Parte 5 — Laboratorio: el colector de Sentinel
 
