@@ -87,6 +87,7 @@ sh hola.sh        # ¡puede fallar! sh no es bash — el shebang existe para evi
 ```
 
 Sintaxis mínima, construida un concepto a la vez (cada uno probado antes de seguir):
+https://devhints.io/bash
 
 ```bash
 #!/bin/bash
