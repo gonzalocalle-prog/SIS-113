@@ -1,0 +1,7 @@
+{"ts": 1758121300, "cpu_pct": 10.0, "mem_used_kb": 3145728, "mem_total_kb": 8388608, "load1": 0.50, "procs": 300, "top_proc": "firefox"}
+{"ts": 1758121301, "cpu_pct": 10.0, "mem_used_kb": 3145728, "load1": 0.50, "procs": 300, "top_proc": "firefox"}
+esto no es json
+{"ts": 1758121303, "cpu_pct": 10.0, "mem_used_kb": 9000000, "mem_total_kb": 8388608, "load1": 0.50, "procs": 300, "top_proc": "firefox"}
+{"ts": 1758121304, "cpu_pct": 10.0, "mem_used_kb": 3145728, "mem_total_kb": 8388608, "load1": 0.50, "procs": 300, "top_proc": "firefox"}
+{"ts": 1758121305, "cpu_pct": 10.0, "mem_used_kb": 3145728, "mem_total_kb": 0, "load1": 0.50, "procs": 300, "top_proc": "firefox"}
+{"ts": 1758121306, "cpu_pct": 10.0, "mem_used_kb": 3145728, "mem_total_kb": 8388608, "load1": 0.50, "procs": 300, "top_proc": "firefox"}

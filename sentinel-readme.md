@@ -59,7 +59,10 @@ sentinel/
 │   ├── collector.sh           # the bash collector
 │   ├── alert.sh               # consumes the stream, colors output / raises thresholds
 │   └── samples/               # captured output files (used later by ReplayCollector)
-├── phase2-c/
+├── phase2-java/               # 2-2026 run: Java comes second — the dashboard written twice
+│   ├── procedural/Sentinel.java   # one file, loose variables, "PAIN" markers
+│   └── oop/                       # six classes, same output, ABSTRACTION/ENCAPSULATION markers
+├── phase2-c/                  # deferred in 2-2026 — see the ordering note in §5
 │   ├── CMakeLists.txt         # ~15 lines: one executable target + CTest
 │   ├── src/collector.c
 │   └── tests/
@@ -101,6 +104,8 @@ Five valid JSON lines, or it fails. `jq` is the grader: no debate, no partial cr
 ---
 
 ## 5. Phase 2 — C Rewrite + CMake (~3 weeks, compressible to 1)
+
+> **Ordering note (2-2026 run).** The syllabus opens the OOP unit in week 5, so in practice **Java comes second**: `phase2-java/` holds the dashboard written twice — a procedural single file and its OOP rewrite with the same behavior — as the vehicle for teaching abstraction and encapsulation (classes 5 and 6). The C rewrite below is deferred and becomes an optional later phase. The contract is unchanged, so the swap-day lesson still holds whenever C arrives. The full Java dashboard of §6 grows out of `phase2-java/oop/`.
 
 *Same contract, new engine. No new functionality — and that's the point: learn C without also learning a new problem.*
 

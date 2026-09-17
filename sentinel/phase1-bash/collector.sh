@@ -32,14 +32,20 @@ while true; do
     load1=$(cut -d' ' -f1 /proc/loadavg)
 
     # ── MISIÓN A (clase 4) ─────────────────────────────────────────
-    # Contar los procesos vivos. Pista: cada proceso es un directorio
-    # con nombre numérico en /proc — ls, grep y wc bastan.
-    procs=0
+    # Contar los procesos vivos: cada proceso es un directorio con
+    # nombre numérico en /proc. ls lista, grep -c cuenta los que
+    # empiezan con dígito (y solo dígitos).
+    procs=$(ls /proc | grep -c '^[0-9][0-9]*$')
 
     # ── MISIÓN B (tarea) ───────────────────────────────────────────
-    # El proceso que más CPU consume. Pista: ps -eo comm --sort=-%cpu
-    # imprime los nombres ordenados; head y tail hacen el resto.
-    top_proc="desconocido"
+    # El proceso que más CPU consume: ps ordena por %cpu descendente,
+    # la línea 1 es el encabezado (COMMAND), la línea 2 es el ganador.
+    # tr quita comillas y barras para no romper el JSON.
+    top_proc=$(ps -eo comm --sort=-%cpu 2>/dev/null | head -n 2 | tail -n 1 | tr -d '"\\')
+    if [ -z "$top_proc" ]; then
+        # Entornos donde ps no soporta -eo/--sort (p. ej. Git Bash)
+        top_proc="desconocido"
+    fi
 
     # cpu_pct de verdad exige DOS lecturas de /proc/stat y una resta
     # entre ellas. Es el reto de la siguiente fase — por ahora, 0.0.
