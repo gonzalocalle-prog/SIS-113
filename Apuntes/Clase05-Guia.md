@@ -8,7 +8,7 @@
 
 Al terminar la clase, cada estudiante:
 
-1. Explica con sus palabras qué son la **JVM** y el **JDK**, qué hace `javac` y qué hace `java`, y por qué Bash se interpreta y Java se compila (repaso de la investigación)
+1. Explica con sus palabras qué son la **JVM** y el **JDK**, qué hace `javac` y qué hace `java`, y por qué Bash se interpreta y Java se compila
 2. Traduce lo que ya sabe de Bash a Java: variables con tipo, `if`/`while`, argumentos, leer stdin, imprimir
 3. Ha conectado por primera vez **dos lenguajes por un pipe**: `./collector.sh | java Echo.java`
 4. Tiene corriendo el **dashboard procedural de Sentinel**: lee el contrato, alerta y resume

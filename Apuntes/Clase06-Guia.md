@@ -47,7 +47,7 @@ En la pizarra, dos columnas que se van a llenar durante la clase:
 
 ### Parte 2 — Clase y objeto: `Snapshot` en la pizarra (30 min)
 
-Las 7 variables sueltas de una lectura (`ts`, `cpuPct`, `memUsedKb`…) viajan **siempre juntas**: son *una cosa*. Esa cosa merece un nombre: una **lectura**, un `Snapshot`. Dibujarla como caja: nombre arriba, atributos en el medio, lo que sabe hacer abajo.
+Las 7 variables sueltas de una lectura (`ts`, `cpuPct`, `memUsedKb`…) viajan **siempre juntas**: son *una cosa*. Esa cosa merece un nombre: una **lectura**, un `Snapshot`.
 
 Sintaxis, un paso a la vez, sobre [Snapshot.java](../sentinel/phase2-java/oop/Snapshot.java):
 
@@ -90,7 +90,7 @@ Las tres palabras y lo que prometen:
 
 - `private` — lo que se esconde. Nadie afuera lo lee ni lo escribe
 - `public` — lo que se promete. Una vez que alguien lo usa, no se puede retirar sin romperlo
-- `final` — lo que no se reasigna. Un `Snapshot` nace válido y muere válido
+- `final` — lo que no se reasigna/inherit. Un `Snapshot` nace válido y muere válido
 
 **Getters, y la ausencia de setters.** `getTs()`, `getMemTotalKb()`: ventanas de solo lectura. No hay `setMemTotalKb()` y **no es un olvido**: una lectura del pasado no se edita. Cada setter que no se escribe es un bug que no puede pasar.
 
@@ -115,9 +115,7 @@ Llenar la pizarra: dolores 1 y 3 → **encapsulamiento**.
 
 ### Parte 4 — Abstracción: ver el qué, esconder el cómo (25 min)
 
-Apoyo visual para toda la parte: [Clase06-C4.excalidraw](Clase06-C4.excalidraw), el modelo C4 del dashboard en tres niveles. El nivel 3 muestra las seis clases y quién llama a quién; leerlo después de `Main`, no antes.
-
-**La prueba.** Abrir solo [Main.java](../sentinel/phase2-java/oop/Main.java). Treinta líneas. Leerlo en voz alta sin abrir los otros cinco archivos: *"crea una regla, un historial, una consola; por cada línea: la parsea, la agrega, la muestra; al final, el resumen"*. ¿Se entiende qué hace el programa? Entonces la abstracción funcionó: cada línea dice **qué** pasa, ninguna dice **cómo**.
+**La prueba.** Abrir solo [Main.java](../sentinel/phase2-java/oop/Main.java). Treinta líneas. *"crea una regla, un historial, una consola; por cada línea: la parsea, la agrega, la muestra; al final, el resumen"*. ¿Se entiende qué hace el programa? Entonces la abstracción funcionó: cada línea dice **qué** pasa, ninguna dice **cómo**.
 
 **[Contract.java](../sentinel/phase2-java/oop/Contract.java) — siete `indexOf` que se volvieron uno.** La búsqueda `"clave": valor` está escrita una sola vez, en `raw()`, y es `private`: nadie afuera sabe que existe. Repetir el experimento 2 del jueves, agregar `"hostname"`:
 
@@ -125,8 +123,6 @@ Apoyo visual para toda la parte: [Clase06-C4.excalidraw](Clase06-C4.excalidraw),
 - `Snapshot`: un atributo, un parámetro, un getter
 - `Console.show`: solo si se quiere ver
 - `Main`: **intacto**
-
-Contar y anotar al lado del número del jueves: dos archivos con cambios previsibles, contra cinco lugares y uno roto sin tocarlo.
 
 **[Console.java](../sentinel/phase2-java/oop/Console.java) y [History.java](../sentinel/phase2-java/oop/History.java)** — `Main` no sabe de códigos de color ni de arreglos. Cuando en la clase 8 `History` cambie el arreglo por una `ArrayList`, `Main` no se entera. Esa será la demostración de abstracción más contundente del curso, y ya está preparada.
 
