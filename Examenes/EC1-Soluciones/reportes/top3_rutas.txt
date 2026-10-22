@@ -1,0 +1,4 @@
+     11 /api/login
+      7 /api/patients
+      4 /index.html
+# cut -d' ' -f5 access.log | sort | uniq -c | sort -rn | head -n 3 > reportes/top3_rutas.txt

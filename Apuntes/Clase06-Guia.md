@@ -124,7 +124,7 @@ Llenar la pizarra: dolores 1 y 3 → **encapsulamiento**.
 - `Console.show`: solo si se quiere ver
 - `Main`: **intacto**
 
-**[Console.java](../sentinel/phase2-java/oop/Console.java) y [History.java](../sentinel/phase2-java/oop/History.java)** — `Main` no sabe de códigos de color ni de arreglos. Cuando en la clase 8 `History` cambie el arreglo por una `ArrayList`, `Main` no se entera. Esa será la demostración de abstracción más contundente del curso, y ya está preparada.
+**[Console.java](../sentinel/phase2-java/oop/Console.java) y [History.java](../sentinel/phase2-java/oop/History.java)** — `Main` no sabe de códigos de color ni de arreglos. Cuando en la clase 7 `History` cambie el arreglo por una `ArrayList`, `Main` no se entera. Esa será la demostración de abstracción más contundente del curso, y ya está preparada.
 
 **El puente con el proyecto.** Es lo mismo que el contrato JSON hace entre Bash y Java — *programar contra el qué, no contra el cómo* — ahora **dentro** de Java, entre clases. Y un adelanto: en la Unidad 3, `Console` y `MemoryRule` se convertirán en familias (`Renderer`, `Rule`) con varias implementaciones. Hoy basta con que vivan separadas.
 

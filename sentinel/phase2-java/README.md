@@ -110,9 +110,10 @@ C4Component
 
 - **Sin paquetes**: los seis archivos van en una carpeta. Los `package` llegan cuando el proyecto crezca.
 - **Sin herencia ni interfaces**: `Console` y `MemoryRule` piden a gritos ser una familia de renderers y de reglas. Eso es la Unidad 3; hoy basta con que vivan separadas.
-- **Sin `ArrayList`**: `History` usa un arreglo con capacidad fija. Las colecciones llegan en la clase 8, y cuando lleguen, `History` cambia por dentro y `Main` no se entera. Esa es la demostración de abstracción que más vale la pena.
+- **Sin `ArrayList`**: `History` usa un arreglo con capacidad fija. Las colecciones llegan en la clase 7, y cuando lleguen, `History` cambia por dentro y `Main` no se entera. Esa es la demostración de abstracción que más vale la pena.
 
 ## Guías de clase
 
 - [Clase 5 — Del script al programa: Java procedural y sus dolores](../../Apuntes/Clase05-Guia.md)
 - [Clase 6 — Abstracción y encapsulamiento: el mismo programa, con dueños](../../Apuntes/Clase06-Guia.md)
+- [Clase 7 — Colecciones y composición: `ArrayList`, `toString`, sobrecarga y Biblioteca](../../Apuntes/Clase07-Guia.md) · bugs de repaso en [`clase07/`](clase07/)

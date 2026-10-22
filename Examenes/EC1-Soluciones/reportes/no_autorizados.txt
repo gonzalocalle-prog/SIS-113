@@ -1,0 +1,2 @@
+Total de accesos no autorizados: 10
+# echo "Total de accesos no autorizados: $(grep ' 401 ' access.log | wc -l)" > reportes/no_autorizados.txt
