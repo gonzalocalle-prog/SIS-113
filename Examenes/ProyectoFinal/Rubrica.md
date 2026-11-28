@@ -20,27 +20,35 @@
 ---
 
 ## 📋 Rúbrica - Proyecto Final
-**Tema: Aplicación completa con POO**
+**Tema: Tu sistema en uso** — formato completo en [ExamenFinal.md](ExamenFinal.md)
 
 ### Criterios de Evaluación
 
 | **Criterio** | **Excelente (90-100%)** | **Bueno (70-89%)** | **Suficiente (51-69%)** | **Insuficiente (0-50%)** | **Peso** |
 |--------------|-------------------------|-------------------|------------------------|-------------------------|----------|
-| **Defensa del Proyecto** | Dominio total, responde preguntas técnicas complejas, demuestra comprensión profunda | Buena defensa con conocimiento sólido | Defensa básica con algunas dudas | No puede defender su trabajo | 40% |
-| **POO (Polimorfismo)** | Implementa correctamente encapsulamiento, herencia y polimorfismo. Uso apropiado de interfaces/clases abstractas | POO bien aplicada con polimorfismo funcional | POO básica con intento de polimorfismo | POO mal implementada o sin polimorfismo | 30% |
-| **Funcionalidad Completa** | Aplicación robusta sin errores, manejo de excepciones | Funciona correctamente con errores menores | Funcionalidad básica con algunos fallos | Múltiples errores o no funciona | 20% |
-| **Complejidad y Originalidad** | Proyecto innovador que excede expectativas | Proyecto completo con elementos creativos | Proyecto estándar que cumple requisitos | Proyecto muy básico o copiado | 10% |
+| **Los flujos** | Los dos flujos de `docs/flujos.md` corren de principio a fin, también con otros datos; los errores se manejan con mensajes claros, sin excepciones en pantalla | Corren con tropiezos menores | Corre el flujo 1; el flujo 2 falla en parte | No hay flujos o no corren | 25% |
+| **El cambio en vivo** | Encuentra el lugar correcto, lo implementa solo y sin IA, y el flujo vuelve a correr | Lo implementa con ayuda mínima | Lo implementa a medias o rompe otra parte | No puede empezar | 25% |
+| **La defensa** | Explica lo nuevo desde la revisión intermedia, la clase elegida por el docente y la bitácora de IA sin dudar; conecta con principios | Explica bien con alguna duda | Explica a grandes rasgos | No puede explicar su código | 30% |
+| **Diseño POO** | Encapsulamiento, herencia y polimorfismo donde hacen falta, con razones | POO correcta, alguna justificación débil | POO presente pero decorativa | Sin POO real | 20% |
+
+**Regla de autoría:** si el estudiante no puede explicar su código **ni** empezar el cambio en vivo, los otros criterios quedan en **Suficiente como máximo**.
+
+**Funcionalidades nuevas:** se permiten sin límite desde la revisión intermedia, siempre que aparezcan en algún flujo y se puedan defender. La defensa empieza por ellas.
 
 ### 📌 Notas Adicionales
 
 **Para ambos proyectos:**
 - **Penalización por plagio**: -100% de la nota
-- **Penalización por entrega tardía**: -10% por día
-- **Bonus**: +5% por implementar funcionalidades extra relevantes
-- **Uso de IA**: Debe ser declarado y el estudiante debe poder explicar todo el código
+- **Uso de IA**: Debe ser declarado en `BITACORA-IA.md` y el estudiante debe poder explicar todo el código
   - En caso de detectar uso de IA no comprendido por el estudiante, se considerará falta de autoría y se penalizará proporcionalmente.
 
-**Entregables mínimos:**
-- Código fuente en repositorio Git
-- Documentación Técnica / README con instrucciones de instalación y uso
-- Para el final: Documentación Técnica - Diagrama UML de clases básico
+**Solo para el Segundo Parcial:**
+- **Penalización por entrega tardía**: -10% por día
+- **Bonus**: +5% por implementar funcionalidades extra relevantes
+
+**Entregables mínimos del Proyecto Final (sin estos no se presenta):**
+- Código fuente en repositorio Git, con historial de commits
+- README con instrucciones de instalación y uso
+- Diagrama UML de clases
+- `BITACORA-IA.md`
+- `docs/flujos.md`: el usuario, el flujo 1 (un día normal) y el flujo 2 (un día en que algo sale mal)
